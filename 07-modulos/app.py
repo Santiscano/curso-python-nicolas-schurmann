@@ -19,3 +19,19 @@ usuario_impuestos.pagar_impuestos()
 from usuarios.admin.utilidades import cobrar
 
 cobrar()
+
+# ---------------------------dir-------------#
+# import usuarios
+# build, chache, doc, file, loader, name, package, path, spec
+# print(dir(usuarios))
+# print(usuarios.__name__)
+# print(usuarios.__package__)
+# print(usuarios.__path__)
+# print(usuarios.__file__)
+# esto mismo se podria hacer con los subpaquetes
+# print(usuarios.admin.__init__)
+# ..........
+
+# --------------------------nombres dinamicos------------#
+print(__name__)
+# la importacion siempre se llama main desde donde se ejecute, y eso podria ser util para el ejemplo del archivo utilidades.py
