@@ -1,0 +1,13 @@
+[[source]]   -> fuente de donde obtiene paquetes y dependencias  
+url = "https://pypi.org/simple"    -> web de donde los extrae
+verify_ssl = true
+name = "pypi"
+
+[packages]   -> paquetes instalados dentro del proyecto
+request3 = "*"   -> * significa ultima version
+requests = "*"
+
+[dev-packages]   -> solo dependencias para desarrollo
+
+[requires]   -> requisitos necesarios para ejecutarse
+python_version = "3.11"
