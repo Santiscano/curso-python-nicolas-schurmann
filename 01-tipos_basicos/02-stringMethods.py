@@ -7,7 +7,7 @@ este curso completa todos los detalles que necesitas
 aprender para encontrar un trabajo como programador
 """
 print(len(nombre_curso))
-print(nombre_curso[0]) #aqui accedemos al primer caracter
+print(nombre_curso[0]) # aqui accedemos al primer caracter
 print(nombre_curso[:]) # izquierda donde inicia - derecha donde termina
 print(nombre_curso[0:8]) # inicia 0 hasta el 8vo caracter
 print(nombre_curso[9:]) # inicia desde el caracter 9 hasta el final
