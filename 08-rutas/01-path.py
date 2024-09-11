@@ -6,10 +6,10 @@ from pathlib import Path
 # Path.home()
 # Path("one/__init__.py")
 
-path = Path("hola-mundo/mi-archivo.py")
-path.is_file()
-path.is_dir()
-path.exists()
+path = Path("hola-mundo/mi-archivo.py") # crea un objeto de tipo Path
+path.is_file() # verifica si el archivo existe
+path.is_dir() # verifica si el directorio existe
+path.exists() # verifica si el archivo o directorio existe
 
 
 print(
