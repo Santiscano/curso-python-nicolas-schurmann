@@ -1,6 +1,6 @@
 # el estandar de python para nombrar archivos es con guion bajo _ ejemplo user_taks
 # NUNCA IMPORTAR CON * 
-# PAQUETES se refiere a carétas, MODULOS refieren a archivos
+# PAQUETES se refiere a carpétas, MODULOS refieren a archivos
 # para indicarle a python que una carpeta es un paquete se debe crear un archivo __init__.py
 # la invocacion seria PAQUETE.MODULO
 

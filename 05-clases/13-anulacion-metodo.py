@@ -1,3 +1,4 @@
+# la anulacion de metodos refiere a que se puede redefinir un metodo de la clase padre en la clase hija
 class Ave:
     def __init__(self) -> None:
         self.volador = True

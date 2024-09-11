@@ -4,7 +4,7 @@
 from abc import ABC, abstractmethod #abc viene de abstrabclass
 # despues de hacer heredar la clase principal con ABC debemos indicar que elementos son obligatorios para la creacion de esta clase
 class Model(ABC):
-    # tabla = False   # se comenta ya que tabla sera el metodo abstracto y siempre sera obliugatorio para los herederos
+    # tabla = False   # se comenta ya que tabla sera el metodo abstracto y siempre sera obligatorio para los herederos
 
 # ya no se necesita el constructor porque dicha validacion ya se puede evitar
     # def __init__(self):

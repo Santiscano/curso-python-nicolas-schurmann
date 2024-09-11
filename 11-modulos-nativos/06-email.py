@@ -27,3 +27,45 @@ with smtplib.SMTP(host="smtp.gmail.com", port=587) as smpt:
     print("mensaje enviado")
 
 
+# OPCION 2
+
+
+from email.message import EmailMessage
+import ssl
+import smtplib
+import imghdr
+
+email_emisor = 'santiscano@gmail.com'
+email_password = '123123'
+email_receptor = 'alhdfajlfs@kjhfk.com'
+
+asunto = 'mail desde udemy'
+cuerpo = """
+te envio un email
+"""
+
+em = EmailMessage()
+em['FROM'] = email_emisor
+em['to'] = email_receptor
+em['subject'] = asunto
+em.set_content(cuerpo)
+
+# adjuntar imagen
+with open('17.jpg', 'rb') as file:
+    file_data = file.read()
+    file_tipo = imghdr.what(file.name)
+    file_nombre = file.name
+em.add_attachment(file_data, filename=file_nombre, subtype=file_tipo, maintype='image')
+
+context = ssl.create_default_context()
+
+with smtplib.SMTP_SSL(host="smtp.gmail.com", port=587) as smtp:
+    smtp.login(email_emisor, email_password)
+    smtp.sendmail(email_emisor,email_receptor, em.as_string())
+
+
+
+
+
+
+
